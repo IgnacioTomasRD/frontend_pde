@@ -1,0 +1,16 @@
+.title{
+    font-family: "Anton",sans-serif;
+    font-weight:lighter;
+    color:#F1E924;
+    font-size: 75px;
+    margin-left: 15px;
+}
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+
+
+

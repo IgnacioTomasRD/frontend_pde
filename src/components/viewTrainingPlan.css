@@ -1,0 +1,72 @@
+.finalizado{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.finalizado input{
+    display: flex;
+    width: fit-content;
+    margin:10px;
+}
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.title{ 
+    text-align: center;
+    color:#F1E924;
+    font-size: 75px;
+    display: block;  
+    margin: 0px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.trainingCard{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    color:#F1E924;
+    height: 175px;
+    text-align: center;
+    border: 3px solid #F1E924;
+    border-radius: 20px;
+}
+
+.training{
+    border-bottom: 2px solid #F1E924;
+    background-color: rgba(128, 128, 128, 0.226);
+}
+.muscles{
+    color:#F1E924;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.redirectToTraining a{
+    display: block;
+    border-radius: 5px;
+    color:#F1E924;
+    background-color: rgba(128, 128, 128, 0.226);
+    padding: 5px;
+    cursor: pointer !important;
+}
+
+.infoTraining{
+    text-align: center;
+    color: #ccc;
+    letter-spacing: 7px;
+    font-style: italic;
+
+}
+

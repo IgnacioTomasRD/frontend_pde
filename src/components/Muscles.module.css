@@ -1,0 +1,110 @@
+body, .list, figure{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.selected{
+    display: block;
+    background-color: rgba(0,0,0,0.7);;
+}
+
+.list li figure{
+    width: 566px;
+    height: 350px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+  
+.list li figcaption{
+    display: none;
+    position: absolute;
+    padding: 125px 0%;   
+    color:white;
+    font-size:75px;
+    font-family: "Anton",sans-serif;
+    text-align: center;
+    top: 0;
+    left:0;
+    bottom:0 ;
+    right:0;
+    background:rgba(0,0,0,0.7);
+    user-select: none;
+}
+
+.list li figure:hover figcaption{
+    display: block;
+    user-select: none;
+}
+
+.list li input[type="checkbox"]:checked + div .icon figure figcaption {
+    display: block;
+    color:#F1E924;
+  }
+  
+.conteiner{
+    display: block;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+
+}
+.option_item {
+    display: block;
+    position: relative;
+    margin: 5px;
+  }
+
+ .checkbox {
+    display: none;
+
+  }
+
+.option_inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+  }
+
+ .icon {
+    margin-bottom: 0px;
+  }
+
+  .option_item .checkbox:checked ~ .option_inner.facebook {
+  border-color: #3b5999;
+  color: #3b5999;
+}
+  
+.submit{
+    margin-top: 20px;
+    font-size:30px;
+    text-align: center;
+    background-color: transparent;
+    color:#F1E924;
+    width: 20vh;
+    font-family: "Anton",sans-serif;
+    border-radius: 5px;
+    padding: 0.5% 0%;
+    border: 1px solid #F1E924;
+    cursor: pointer;
+}
+.containersubmit{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: end;
+    margin-bottom: 10px;
+}

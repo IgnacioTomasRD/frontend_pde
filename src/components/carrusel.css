@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton",sans-serif;
+    font-weight:lighter;
+}
+
+body{
+    background-image: url("imagenTrainingPlan.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.carrusel{
+    height: 700px;
+    overflow: hidden;
+    margin: 10px 50px;
+    border-radius: 50px;
+}
+
+.itemCarrusel{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.tarjetaCarrusel{
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 25px 100px;
+}
+.ulCarrusel{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0px 100px;
+}
+
+.ulCarrusel li{
+    margin: 10px 10px ;
+}
+
+.rightArrow{
+    position: absolute;
+    display: flex;
+    text-decoration: none;
+    right: 25px;
+    top: 285px;
+    z-index: 1;
+    font-size: 100px;
+    color: #F1E924;
+}
+
+.leftArrow{
+    position: absolute;
+    display: flex;
+    text-decoration: none;
+    left: 30px;
+    font-size: 100px;
+    color: #F1E924;
+    top: 285px;
+    z-index: 1;
+}
