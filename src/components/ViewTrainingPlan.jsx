@@ -1,6 +1,6 @@
 import "./viewTrainingPlan.css"
 import { useNavigate } from 'react-router-dom';
-import { useState , useEffect, useContext} from "react";
+import { useState , useEffect, useContext} from "react"; // sacar importaciones que no se usen
 import React from 'react';
 import Carrusel from "./Carrusel";
 import { TrainingPlanContext } from "../context/TrainingPlanContext";
@@ -24,6 +24,7 @@ function ViewTrainingPlan(){
     
     let grid = generateGridArray(trainings, numberOfItemsToShow);
 
+    // usar parentesis para render de un componente e identar codigo de forma prolija
     return<div className="conteiner"> 
     <div>
         <h1 className="title">

@@ -1,6 +1,7 @@
 import "./carrusel.css"
 
 function Carrusel(props) {
+    // deberían ser Componentes 
       function rightArrow(grid, index,idPrefix){
         if(grid.length>(index+1)){
             return <a href={"#"+idPrefix+"-"+ (index+1)} className="rightArrow"><i className="fa-solid fa-chevron-right"></i></a>
@@ -9,11 +10,11 @@ function Carrusel(props) {
         }
     }
 
-    function leftArrow(grid, index,idPrefix){
+    function leftArrow(grid, index, idPrefix){
         if(index!==0){
             return <a href={"#"+idPrefix+"-"+ (index-1)} className="leftArrow"><i className="fa-solid fa-chevron-left"></i></a>
         } else {
-            return null;
+            return <></>;
         }
     }
 
@@ -25,7 +26,7 @@ function Carrusel(props) {
               <ul className ="ulCarrusel">
                 {gr.map((e, j) =>
                   <li key={"li-" + j}>
-                    {props.cardComponent(e,i, j)}
+                    {props.cardComponent(e, i, j)}
                   </li>
                 )}
               </ul>

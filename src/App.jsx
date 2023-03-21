@@ -9,24 +9,30 @@ import { TrainingPlanProvider } from "./context/TrainingPlanContext";
  
 function App(){
 
-    return <>
-    <TrainingPlanProvider>
-        <BrowserRouter>
-            <Routes>
-                <Route path = "/" element={<><Home /> <FormTraining /></>}></Route>
-            </Routes>
-            <Routes>
-                <Route path ="/muscles" element={<FormMuscles></FormMuscles>}></Route>
-            </Routes>
-            <Routes>
-                <Route exact path ="/trainingPlan" element={<ViewTrainingPlan></ViewTrainingPlan>}></Route>
-            </Routes>
-            <Routes>
-                <Route exact path ="/training/:id" element={<ViewExercises></ViewExercises>}></Route>
-            </Routes>
-        </BrowserRouter>
-    </TrainingPlanProvider>    
-    </>;
+    return(
+        <TrainingPlanProvider>
+            <BrowserRouter>
+            {/* selfclosing tags */}
+                <Routes>
+                    <Route path = "/" element={
+                        <>
+                            <Home /> 
+                            <FormTraining />
+                        </>
+                    }/>
+                </Routes>
+                <Routes>
+                    <Route path ="/muscles" element={<FormMuscles />}></Route>
+                </Routes>
+                <Routes>
+                    <Route exact path ="/trainingPlan" element={<ViewTrainingPlan></ViewTrainingPlan>} />
+                </Routes>
+                <Routes>
+                    <Route exact path ="/training/:id" element={<ViewExercises></ViewExercises>}></Route>
+                </Routes>
+            </BrowserRouter>
+        </TrainingPlanProvider>
+    );
 }
 
 export default App;

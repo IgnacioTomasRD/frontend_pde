@@ -45,7 +45,7 @@ function FormTraining(){
 
         setTrainingPlan(object);
 
-        console.log(trainingPlan);
+        // console.log(trainingPlan); // quitar los console.logs
         navigateTo("/muscles");
     }
 
@@ -68,9 +68,9 @@ function FormTraining(){
                 <select className = {styles.selectFormTraining} id = "itipo" onChange={handleDisplay} defaultValue = "default" name = "type">
                     <option value="default"> Selecciona una opción</option>
                     {
-                    typesOfTraining ?  typesOfTraining.map( ty => 
-                    <option key= {ty.id} value = {ty.typeOfTraining}> {ty.typeOfTraining}</option>
-                    ) : null
+                        typesOfTraining ?  typesOfTraining.map( ty => 
+                            <option key= {ty.id} value = {ty.typeOfTraining}> {ty.typeOfTraining}</option>
+                        ) : null
                     }
                 </select>
                 
@@ -85,9 +85,9 @@ function FormTraining(){
                 <select className = {styles.selectFormTraining} id = "idifficulty" defaultValue = "default" name = "difficulty">
                     <option value= "default" disabled> Selecciona una opción</option>
                     {
-                    difficulty ?  difficulty.map( df => 
-                    <option key= {df.id} value = {df.difficulty}> {df.difficulty}</option>
-                    ) : null
+                        difficulty ?  difficulty.map( df => 
+                            <option key= {df.id} value = {df.difficulty}> {df.difficulty}</option>
+                        ) : null
                     }
                 </select>
                 
@@ -98,13 +98,15 @@ function FormTraining(){
                             <option value= "normalPlanner" > NORMAL PLANNER </option>
                             <option value= "plusPlanner" > PLUS PLANNER </option>
                     </select>
-                    <h2 ><i className="fa-solid fa-circle-info"></i></h2>
+                    <h2 >
+                        <i className="fa-solid fa-circle-info"></i>
+                    </h2>
                     <div>  
-                    <p className = {styles.pInfo}>
-                       PLAN NORMAL: UN MUSCULO X ENTRENAMIENTO<br></br>
-                        PLAN PLUS: ENTRENAMIENTO DE TODOS LOS MUSCULOS POR SEMANA
-                    </p>
-                </div>
+                        <p className = {styles.pInfo}>
+                            PLAN NORMAL: UN MUSCULO X ENTRENAMIENTO<br />
+                            PLAN PLUS: ENTRENAMIENTO DE TODOS LOS MUSCULOS POR SEMANA
+                        </p>
+                    </div>
                 </div>
                 
                 <div className={activeWeight ? "" : styles.displayNone}>
@@ -112,13 +114,13 @@ function FormTraining(){
                     <select className = {styles.selectFormTraining} id = "iweight" defaultValue = "default" name = "weight">
                         <option value= "default" disabled> Selecciona una opción</option>
                         {
-                        weight ?  weight.map( w => 
-                        <option key= {w.id} value = {w.weight}> {w.weight}</option>
-                        ) : null
+                            weight ?  weight.map( w => 
+                                <option key= {w.id} value = {w.weight}> {w.weight}</option>
+                            ) : null
                         }
                     </select>
                 </div>
-                <input className={styles.input_submit} type="submit" name ="form" value="Consiguelo!"></input>
+                <input className={styles.input_submit} type="submit" name ="form" value="Consiguelo!"/>
             </form>
         </div>
     </div>

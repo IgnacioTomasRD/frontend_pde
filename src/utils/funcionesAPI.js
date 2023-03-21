@@ -41,7 +41,7 @@ const getMuscles = async function(state){
 const getTrainingPlan = async function(state,trainingPlan){
   try {
     console.log(JSON.stringify(trainingPlan));
-    const response =await fetch('http://localhost:3000/trainingPlan', {
+    const response = await fetch('http://localhost:3000/trainingPlan', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -49,8 +49,9 @@ const getTrainingPlan = async function(state,trainingPlan){
       body: JSON.stringify(trainingPlan)
     });
     const data = await response.json();
-    console.log(data);
-    state(data);
+    // console.log(data);
+    // state(data);
+    return data;
   } catch (error) {
     console.error(error);
   }

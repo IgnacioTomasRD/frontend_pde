@@ -24,17 +24,15 @@ function Muscles(){
         }
 
         let muscles=  selectedMuscles.map(s => ({name: s, subMuscles: []}));
-        console.log(selectedMuscles);
+        // console.log(selectedMuscles);
 
         let object = {... trainingPlan,muscles};
 
-        console.log(selectedMuscles);
+        // console.log(selectedMuscles);
         console.log(object);
 
         await getTrainingPlan(setTrainingPlan,object);
-        
-       
- 
+    
         navigateTo("/trainingPlan");
     }
 
@@ -63,7 +61,7 @@ function Muscles(){
                 } ): null }
             </ul>
             <div className={styles.containersubmit}>
-                <input className={styles.submit} type="submit" name ="form" value="YA ESTOY LISTO!"></input>
+                <input className={styles.submit} type="submit" name ="form" value="YA ESTOY LISTO!"/>
             </div>
         </form>
         
