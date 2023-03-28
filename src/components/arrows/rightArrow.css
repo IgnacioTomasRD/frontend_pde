@@ -1,0 +1,10 @@
+.rightArrow{
+    position: absolute;
+    display: flex;
+    text-decoration: none;
+    right: 25px;
+    top: 285px;
+    z-index: 1;
+    font-size: 100px;
+    color: #F1E924;
+}
