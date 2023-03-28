@@ -30,9 +30,7 @@ function Muscles(){
 
 
         await getTrainingPlan(setTrainingPlan,object);
-        
-       
- 
+    
         navigateTo("/trainingPlan");
     }
 

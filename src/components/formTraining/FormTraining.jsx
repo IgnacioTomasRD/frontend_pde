@@ -96,7 +96,9 @@ function FormTraining(){
                             <option value= "normalPlanner" > NORMAL PLANNER </option>
                             <option value= "plusPlanner" > PLUS PLANNER </option>
                     </select>
-                    <h2 ><i className="fa-solid fa-circle-info"></i></h2>
+                    <h2 >
+                        <i className="fa-solid fa-circle-info"></i>
+                    </h2>
                     <div>  
                     <p className = {styles.pInfo}>
                        PLAN NORMAL: UN MUSCULO X ENTRENAMIENTO<br/>
