@@ -45,12 +45,10 @@ function FormTraining(){
 
         setTrainingPlan(object);
 
-        console.log(trainingPlan);
         navigateTo("/muscles");
     }
 
     function handleDisplay(e){
-        console.log(e);
         if(e.target.value !== "FUERZA"){
             setActiveWeight(true);
         } else {

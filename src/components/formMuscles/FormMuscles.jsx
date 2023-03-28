@@ -7,8 +7,6 @@ function FormMuscles(){
 
     const {trainingPlan, setTrainingPlan} = useContext(TrainingPlanContext);
 
-    console.log(trainingPlan);
-
     return <div className={styles.conteiner}>
         <div>
             <h2 className={styles.title}>Seleccione los musculos que te gustaria entrenar</h2>

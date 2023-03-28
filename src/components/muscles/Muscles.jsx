@@ -24,12 +24,10 @@ function Muscles(){
         }
 
         let muscles=  selectedMuscles.map(s => ({name: s, subMuscles: []}));
-        console.log(selectedMuscles);
+
 
         let object = {... trainingPlan,muscles};
 
-        console.log(selectedMuscles);
-        console.log(object);
 
         await getTrainingPlan(setTrainingPlan,object);
         
